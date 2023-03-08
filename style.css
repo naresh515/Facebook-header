@@ -19,6 +19,7 @@ body {
 .left_nav {
     display: flex;
     gap: 15px;
+    cursor: pointer;
 }
 
 .facebook {
@@ -27,9 +28,20 @@ body {
 }
 
 .button {
-    border-radius: 50%;
     border: none;
-    padding: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: white;
+    background-color: black;
+}
+
+.icon i:hover {
+    color: black;
 }
 
 .search {
@@ -48,6 +60,8 @@ body {
 .icons1 {
     color: gray;
     padding: 15px 0px;
+    width: 60px;
+    text-align: center;
 }
 
 .icon {
@@ -55,10 +69,16 @@ body {
     gap: 80px;
     font-size: 25px;
     position: relative;
+    cursor: pointer;
 }
 
 .toogle {
     padding: 20px 0px;
+    width: 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .toogle span {
@@ -166,6 +186,19 @@ span {
     display: block;
 }
 
+#form {
+    width: 600px;
+    height: 40px;
+    border-radius: 15px;
+    position: absolute;
+    right: 50%;
+    z-index: 1;
+    left: 23%;
+    font-size: 15px;
+    text-indent: 30px;
+    display: none;
+}
+
 @media screen and (min-width: 320px) and (max-width: 800px) {
     .nav {
         display: none;
@@ -229,5 +262,9 @@ span {
         align-items: center;
         color: white;
         width: 60px;
+    }
+
+    .responsive_icon i:hover {
+        color: white;
     }
 }
